@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abdulahad — Frontend Web Developer crafting pixel-perfect, responsive web experiences." />
+  <title>AbdulahadBLOOM — Frontend Developer</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts: Bebas Neue (hero display) + Plus Jakarta Sans (body/UI) -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80">
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div id="preloader" aria-hidden="true">
+    <div class="pre-inner">
+      <span class="pre-bracket">&lt;</span>
+      <span class="pre-name">AbdulahadBLOOM</span>
+      <span class="pre-bracket">/&gt;</span>
+    </div>
+  </div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav id="mainNav" class="navbar navbar-expand-lg sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand logo-text" href="#hero">
+        <span class="logo-bracket">&lt;</span>AbdulahadBLOOM<span class="logo-bracket">/&gt;</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="nav-link btn-hire" href="#contact">Hire Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" class="hero-section">
+    <div class="hero-noise" aria-hidden="true"></div>
+    <div class="hero-grid-lines" aria-hidden="true"></div>
+    <!-- Ambient glow spots -->
+    <div class="glow-spot glow-a" aria-hidden="true"></div>
+    <div class="glow-spot glow-b" aria-hidden="true"></div>
+
+    <div class="container position-relative z-1">
+      <div class="hero-layout">
+
+        <!-- Left: text -->
+        <div class="hero-text-col">
+          <div class="hero-available reveal-up">
+            <span class="avail-dot"></span> Open to opportunities
+          </div>
+
+          <h1 class="hero-name reveal-up delay-1">
+            <span class="hero-name-line">Frontend</span>
+            <span class="hero-name-line accent-line">Developer</span>
+          </h1>
+
+          <p class="hero-intro reveal-up delay-2">
+            Hi, I'm <strong>AbdulahadBLOOM</strong> — a Frontend Developer passionate about building clean, responsive websites. I work with HTML, CSS, JavaScript &amp; Bootstrap, and I'm always working on something new.
+          </p>
+
+          <div class="hero-cta reveal-up delay-3">
+            <a href="#projects" class="btn-primary-custom">
+              View My Work <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn-outline-custom">
+              Let's Talk <i class="bi bi-send"></i>
+            </a>
+          </div>
+
+          <!-- Tech stack line -->
+          <div class="hero-stack reveal-up delay-4">
+            <span class="stack-label">Stack:</span>
+            <span class="stack-tag">HTML5</span>
+            <span class="stack-tag">CSS3</span>
+            <span class="stack-tag">JavaScript</span>
+            <span class="stack-tag">Bootstrap</span>
+            <span class="stack-tag">jQuery</span>
+          </div>
+        </div>
+
+        <!-- Right: visual card -->
+        <div class="hero-visual-col reveal-right">
+          <div class="hero-card">
+            <!-- Card header bar -->
+            <div class="card-topbar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="card-topbar-title">portfolio.js</span>
+            </div>
+            <!-- Code preview -->
+            <pre class="hero-code"><code><span class="c-keyword">const</span> <span class="c-var">AbdulahadBLOOM</span> = {
+  <span class="c-prop">role</span>:       <span class="c-str">"Frontend Developer"</span>,
+  <span class="c-prop">location</span>:   <span class="c-str">"Pakistan 🇵🇰"</span>,
+  <span class="c-prop">status</span>:     <span class="c-str">"Passionate Developer"</span>,
+  <span class="c-prop">focus</span>: [
+    <span class="c-str">"Clean Code"</span>,
+    <span class="c-str">"Great UX"</span>,
+    <span class="c-str">"Performance"</span>
+  ],
+  <span class="c-prop">available</span>: <span class="c-bool">true</span>
+};</code></pre>
+            <!-- Mini stats inside card -->
+            <div class="card-stats">
+              <div class="cstat">
+                <span class="cstat-num">1</span>
+                <span class="cstat-label">Project</span>
+              </div>
+              <div class="cstat-sep"></div>
+              <div class="cstat">
+                <span class="cstat-num">6+</span>
+                <span class="cstat-label">Technologies</span>
+              </div>
+              <div class="cstat-sep"></div>
+              <div class="cstat">
+                <span class="cstat-num">100%</span>
+                <span class="cstat-label">Responsive</span>
+              </div>
+            </div>
+          </div>
+          <!-- Floating accent chips -->
+          <div class="float-chip chip-html" aria-hidden="true">
+            <i class="bi bi-filetype-html"></i> HTML5
+          </div>
+          <div class="float-chip chip-js" aria-hidden="true">
+            <i class="bi bi-filetype-js"></i> JS
+          </div>
+          <div class="float-chip chip-css" aria-hidden="true">
+            <i class="bi bi-filetype-css"></i> CSS3
+          </div>
+        </div>
+
+      </div><!-- end hero-layout -->
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="scroll-hint" aria-label="Scroll to about">
+      <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section-pad">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+
+        <!-- Code card -->
+        <div class="col-lg-5 reveal-left">
+          <div class="about-code-card">
+            <div class="code-card-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="code-card-title">about.js</span>
+            </div>
+            <pre class="code-snippet"><code><span class="c-comment">// Who is Abdulahad?</span>
+<span class="c-keyword">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>:     <span class="c-str">"Abdulahad"</span>,
+  <span class="c-prop">role</span>:     <span class="c-str">"Frontend Developer"</span>,
+  <span class="c-prop">location</span>: <span class="c-str">"Pakistan 🇵🇰"</span>,
+  <span class="c-prop">passion</span>: [
+    <span class="c-str">"Clean Code"</span>,
+    <span class="c-str">"Responsive Design"</span>,
+    <span class="c-str">"Problem Solving"</span>
+  ],
+  <span class="c-prop">coffee</span>: <span class="c-str">"yes, always ☕"</span>,
+  <span class="c-prop">available</span>: <span class="c-bool">true</span>
+};</code></pre>
+            <!-- Terminal cursor -->
+            <div class="terminal-line">
+              <span class="t-prompt">▶</span>
+              <span class="t-text">node about.js</span>
+              <span class="t-cursor">|</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="col-lg-7 reveal-right">
+          <div class="section-label">About Me</div>
+          <h2 class="section-title">Passionate about the web,<br>one project at a time.</h2>
+          <p class="section-body">
+            I'm AbdulahadBLOOM, a Frontend Developer who loves building things for the web. I work with HTML, CSS, JavaScript, and Bootstrap — focusing on clean code, good structure, and making sure everything looks great on every screen.
+          </p>
+          <p class="section-body">
+            I'm currently building my skills and my portfolio, taking on small projects and constantly improving. Every project I finish teaches me something new — and I enjoy every bit of it.
+          </p>
+
+          <div class="about-pills">
+            <span class="about-pill"><i class="bi bi-geo-alt-fill"></i> Pakistan</span>
+            <span class="about-pill"><i class="bi bi-envelope-fill"></i> prog8678@gmail.com</span>
+            <span class="about-pill open-pill"><i class="bi bi-circle-fill"></i> Open to work</span>
+          </div>
+
+          <a href="#contact" class="btn-primary-custom mt-4 d-inline-flex">
+            Let's Connect <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS COUNTER ===================== -->
+  <section id="stats" class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+
+        <div class="stat-block reveal-up delay-1">
+          <div class="stat-icon"><i class="bi bi-folder-fill"></i></div>
+          <div class="stat-body">
+            <span class="stat-counter" data-target="5">0</span>
+            <span class="stat-plus"></span>
+            <p class="stat-text">Projects Built</p>
+          </div>
+        </div>
+
+        <div class="stat-sep" aria-hidden="true"></div>
+
+        <div class="stat-block reveal-up delay-2">
+          <div class="stat-icon"><i class="bi bi-tools"></i></div>
+          <div class="stat-body">
+            <span class="stat-counter" data-target="6">0</span>
+            <span class="stat-plus">+</span>
+            <p class="stat-text">Technologies</p>
+          </div>
+        </div>
+
+        <div class="stat-sep" aria-hidden="true"></div>
+
+        <div class="stat-block reveal-up delay-3">
+          <div class="stat-icon"><i class="bi bi-layers-fill"></i></div>
+          <div class="stat-body">
+            <span class="stat-counter" data-target="100">0</span>
+            <span class="stat-plus">%</span>
+            <p class="stat-text">Mobile-Responsive</p>
+          </div>
+        </div>
+
+        <div class="stat-sep" aria-hidden="true"></div>
+
+        <div class="stat-block reveal-up delay-4">
+          <div class="stat-icon"><i class="bi bi-person-check-fill"></i></div>
+          <div class="stat-body">
+            <span class="stat-counter" data-target="100">0</span>
+            <span class="stat-plus">%</span>
+            <p class="stat-text">Always Improving</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" class="section-pad skills-section">
+    <div class="container">
+      <div class="text-center mb-5 reveal-up">
+        <div class="section-label mx-auto">My Skills</div>
+        <h2 class="section-title">Technologies I Work With</h2>
+        <p class="section-sub">The technologies I use to build websites and web interfaces.</p>
+      </div>
+
+      <div class="skills-layout">
+
+        <!-- Left: progress bars -->
+        <div class="skills-bars reveal-left">
+          <div class="skill-row">
+            <div class="skill-row-top">
+              <span class="skill-row-name"><span class="skill-dot html"></span> HTML5</span>
+              <span class="skill-row-pct">85%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill html-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-row-top">
+              <span class="skill-row-name"><span class="skill-dot css"></span> CSS3</span>
+              <span class="skill-row-pct">80%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill css-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-row-top">
+              <span class="skill-row-name"><span class="skill-dot js"></span> JavaScript</span>
+              <span class="skill-row-pct">60%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill js-fill" data-width="60"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-row-top">
+              <span class="skill-row-name"><span class="skill-dot bs"></span> Bootstrap 5</span>
+              <span class="skill-row-pct">80%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill bs-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-row-top">
+              <span class="skill-row-name"><span class="skill-dot jq"></span> jQuery</span>
+              <span class="skill-row-pct">65%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill jq-fill" data-width="65"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-row-top">
+              <span class="skill-row-name"><span class="skill-dot git"></span> Git / GitHub</span>
+              <span class="skill-row-pct">65%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill git-fill" data-width="65"></div></div>
+          </div>
+        </div>
+
+        <!-- Right: tech cards grid -->
+        <div class="skills-cards reveal-right">
+          <div class="tech-card">
+            <div class="tech-icon html-icon"><i class="bi bi-filetype-html"></i></div>
+            <span class="tech-name">HTML5</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon css-icon"><i class="bi bi-filetype-css"></i></div>
+            <span class="tech-name">CSS3</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon js-icon"><i class="bi bi-filetype-js"></i></div>
+            <span class="tech-name">JavaScript</span>
+          </div>
+          <div class="tech-card featured-tech">
+            <div class="tech-icon bs-icon"><i class="bi bi-bootstrap-fill"></i></div>
+            <span class="tech-name">Bootstrap</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon jq-icon"><i class="bi bi-braces"></i></div>
+            <span class="tech-name">jQuery</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon git-icon"><i class="bi bi-git"></i></div>
+            <span class="tech-name">Git</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon resp-icon"><i class="bi bi-phone-fill"></i></div>
+            <span class="tech-name">Responsive</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon ui-icon"><i class="bi bi-layers-fill"></i></div>
+            <span class="tech-name">UI Dev</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="section-pad">
+    <div class="container">
+      <div class="section-header-row reveal-up">
+        <div>
+          <div class="section-label">My Work</div>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+        <p class="section-sub" style="max-width:380px;">A few projects I've built — real code, fully responsive.</p>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="filter-bar reveal-up delay-1" id="projectFilters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="landing">Landing Pages</button>
+        <button class="filter-btn" data-filter="ui">UI Components</button>
+        <button class="filter-btn" data-filter="app">Web Apps</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="projects-grid" id="projectGrid">
+
+        <!-- Project 1 -->
+        <div class="project-item reveal-up delay-1" data-category="landing">
+          <div class="project-card">
+            <div class="project-thumb thumb-1">
+              
+              <div class="project-overlay">
+                <a href="https://abdulahad21.netlify.app/" class="pov-btn pov-live" target="_blank" rel="noopener">
+                  <i class="bi bi-eye-fill"></i> Live Demo
+                </a>
+                <a href="https://github.com/AbdulahadBLOOM/-DURABLE-Furnitures" class="pov-btn pov-github" target="_blank" rel="noopener">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JS</span><span class="ptag">Bootstrap</span>
+              </div>
+              <h3 class="project-title">Durable Furnitures</h3>
+              <p class="project-desc">
+                A full e-commerce furniture website for a Karachi-based store. Features 100+ products across 4 brands, cart, compare, filters, reviews & more.
+              </p>
+              <div class="project-footer">
+                <span class="pf-type"><i class="bi bi-shop"></i> E-Commerce Site</span>
+                <div class="pf-links">
+                  <a href="https://abdulahad21.netlify.app/" title="Live Demo" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a>
+                  <a href="https://github.com/AbdulahadBLOOM/-DURABLE-Furnitures" title="GitHub" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-item reveal-up delay-2" data-category="app">
+          <div class="project-card">
+            <div class="project-thumb thumb-2">
+              <div class="thumb-art-icon"><i class="bi bi-list-check"></i></div>
+              <div class="project-overlay">
+                <a href="https://teskmeneger.netlify.app/" class="pov-btn pov-live" target="_blank" rel="noopener">
+                  <i class="bi bi-eye-fill"></i> Live Demo
+                </a>
+                <a href="https://github.com/AbdulahadBLOOM/Task-manager" class="pov-btn pov-github" target="_blank" rel="noopener">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="ptag">JavaScript</span><span class="ptag">jQuery</span><span class="ptag">CSS</span>
+              </div>
+              <h3 class="project-title">Task Manager App</h3>
+              <p class="project-desc">
+                A drag-and-drop task manager with local storage persistence, category 
+                filtering, and animated transitions — no frameworks needed.
+              </p>
+              <div class="project-footer">
+                <span class="pf-type"><i class="bi bi-app-indicator"></i> Web App</span>
+                <div class="pf-links">
+                  <a href="#" title="Live Demo"><i class="bi bi-box-arrow-up-right"></i></a>
+                  <a href="#" title="GitHub"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-item reveal-up delay-3" data-category="ui">
+          <div class="project-card">
+            <div class="project-thumb thumb-3">
+              <div class="thumb-art-icon"><i class="bi bi-ui-checks-grid"></i></div>
+              <div class="project-overlay">
+                <a href="#" class="pov-btn pov-live" target="_blank" rel="noopener">
+                  <i class="bi bi-eye-fill"></i> Live Demo
+                </a>
+                <a href="#" class="pov-btn pov-github" target="_blank" rel="noopener">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JS</span>
+              </div>
+              <h3 class="project-title">UI Component Library</h3>
+              <p class="project-desc">
+                Reusable components — modals, tooltips, accordions, animated buttons — 
+                crafted with vanilla CSS and JavaScript, zero dependencies.
+              </p>
+              <div class="project-footer">
+                <span class="pf-type"><i class="bi bi-grid-1x2"></i> UI Kit</span>
+                <div class="pf-links">
+                  <a href="#" title="Live Demo"><i class="bi bi-box-arrow-up-right"></i></a>
+                  <a href="#" title="GitHub"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-item reveal-up delay-4" data-category="landing">
+          <div class="project-card">
+            <div class="project-thumb thumb-4">
+              <div class="thumb-art-icon"><i class="bi bi-person-workspace"></i></div>
+              <div class="project-overlay">
+                <a href="#" class="pov-btn pov-live" target="_blank" rel="noopener">
+                  <i class="bi bi-eye-fill"></i> Live Demo
+                </a>
+                <a href="#" class="pov-btn pov-github" target="_blank" rel="noopener">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="ptag">Bootstrap</span><span class="ptag">jQuery</span>
+              </div>
+              <h3 class="project-title">Agency Portfolio Site</h3>
+              <p class="project-desc">
+                Multi-section agency website with smooth scroll, animated counters, 
+                parallax hero, and a filterable portfolio grid.
+              </p>
+              <div class="project-footer">
+                <span class="pf-type"><i class="bi bi-shop"></i> E-Commerce Site</span>
+                <div class="pf-links">
+                  <a href="#" title="Live Demo"><i class="bi bi-box-arrow-up-right"></i></a>
+                  <a href="#" title="GitHub"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-item reveal-up delay-5" data-category="app">
+          <div class="project-card">
+            <div class="project-thumb thumb-5">
+              <div class="thumb-art-icon"><i class="bi bi-cloud-sun-fill"></i></div>
+              <div class="project-overlay">
+                <a href="#" class="pov-btn pov-live" target="_blank" rel="noopener">
+                  <i class="bi bi-eye-fill"></i> Live Demo
+                </a>
+                <a href="#" class="pov-btn pov-github" target="_blank" rel="noopener">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="ptag">JavaScript</span><span class="ptag">REST API</span><span class="ptag">CSS</span>
+              </div>
+              <h3 class="project-title">Weather Dashboard</h3>
+              <p class="project-desc">
+                Real-time weather app with dynamic backgrounds, animated weather icons, 
+                and a 5-day forecast. Consumes a public REST API.
+              </p>
+              <div class="project-footer">
+                <span class="pf-type"><i class="bi bi-app-indicator"></i> Web App</span>
+                <div class="pf-links">
+                  <a href="#" title="Live Demo"><i class="bi bi-box-arrow-up-right"></i></a>
+                  <a href="#" title="GitHub"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end projects-grid -->
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section id="services" class="section-pad services-section">
+    <div class="container">
+      <div class="text-center mb-5 reveal-up">
+        <div class="section-label mx-auto">What I Do</div>
+        <h2 class="section-title">Services I Offer</h2>
+        <p class="section-sub">Things I can help with.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal-up delay-1">
+          <div class="service-num">01</div>
+          <div class="service-icon-wrap"><i class="bi bi-code-slash"></i></div>
+          <h3 class="service-title">Frontend Development</h3>
+          <p class="service-desc">
+            I build websites from scratch using HTML, CSS, and JavaScript — clean, well-structured, and easy to maintain.
+          </p>
+          <ul class="service-list list-unstyled">
+            <li><i class="bi bi-check2"></i> Semantic HTML5 markup</li>
+            <li><i class="bi bi-check2"></i> Custom CSS animations</li>
+            <li><i class="bi bi-check2"></i> JavaScript interactivity</li>
+            <li><i class="bi bi-check2"></i> jQuery integration</li>
+          </ul>
+        </div>
+
+        <div class="service-card service-card--featured reveal-up delay-2">
+          <div class="service-num">02</div>
+          <div class="service-icon-wrap"><i class="bi bi-phone-landscape-fill"></i></div>
+          <h3 class="service-title">Responsive Web Design</h3>
+          <p class="service-desc">
+            Every site I build works perfectly on mobile, tablet, and desktop. I use Bootstrap 5 and write flexible layouts that adapt to any screen.
+          </p>
+          <ul class="service-list list-unstyled">
+            <li><i class="bi bi-check2"></i> Mobile-first approach</li>
+            <li><i class="bi bi-check2"></i> Bootstrap 5 grid system</li>
+            <li><i class="bi bi-check2"></i> Fluid typography</li>
+            <li><i class="bi bi-check2"></i> Cross-browser testing</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section-pad">
+    <div class="container">
+      <div class="text-center mb-5 reveal-up">
+        <div class="section-label mx-auto">Let's Talk</div>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-sub">Have an idea or just want to connect? Drop me a message.</p>
+      </div>
+
+      <div class="contact-layout">
+
+        <!-- Info panel -->
+        <div class="contact-info reveal-left">
+          <h3 class="contact-info-title">Let's connect!</h3>
+          <p class="contact-info-body">
+            Whether you have a project idea, want to collaborate, or just want to say hi — feel free to reach out. I'm always happy to connect.
+          </p>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <a href="https://mail.google.com/mail/?view=cm&to=prog8678@gmail.com" target="_blank" rel="noopener" class="contact-item-value">
+                prog8678@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <div class="contact-item-label">Location</div>
+              <span class="contact-item-value">Pakistan 🇵🇰 — Remote globally</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="bi bi-clock-fill"></i></div>
+            <div>
+              <div class="contact-item-label">Availability</div>
+              <span class="contact-item-value avail-green">
+                <i class="bi bi-circle-fill"></i> Open to work
+              </span>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter/X">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap reveal-right">
+          <div id="formSuccess" class="form-success d-none">
+            <div class="success-icon"><i class="bi bi-check-circle-fill"></i></div>
+            <h4>Message sent!</h4>
+            <p>I'll get back to you within 24 hours.</p>
+          </div>
+          <div id="contactForm">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="contactName" class="form-label">Your Name</label>
+                <input type="text" id="contactName" class="form-control custom-input"
+                       placeholder="John Doe" required />
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="col-sm-6">
+                <label for="contactEmail" class="form-label">Email Address</label>
+                <input type="email" id="contactEmail" class="form-control custom-input"
+                       placeholder="john@example.com" required />
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+              <div class="col-12">
+                <label for="contactSubject" class="form-label">Subject</label>
+                <input type="text" id="contactSubject" class="form-control custom-input"
+                       placeholder="Project enquiry…" />
+              </div>
+              <div class="col-12">
+                <label for="contactMessage" class="form-label">Message</label>
+                <textarea id="contactMessage" class="form-control custom-input" rows="5"
+                          placeholder="Tell me about your project…" required></textarea>
+                <div class="invalid-feedback">Please write your message.</div>
+              </div>
+              <div class="col-12">
+                <button id="submitBtn" type="button" class="btn-primary-custom w-100 justify-content-center">
+                  <span id="btnText">Send Message <i class="bi bi-send"></i></span>
+                  <span id="btnLoader" class="d-none">
+                    <span class="spinner-border spinner-border-sm me-2" role="status"></span>Sending…
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-text">
+            <span class="logo-bracket">&lt;</span>AbdulahadBLOOM<span class="logo-bracket">/&gt;</span>
+          </span>
+          <p class="footer-tagline">Frontend Developer · Building &amp; Growing</p>
+          <div class="footer-social">
+            <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-links-title">Navigation</h4>
+          <nav aria-label="Footer navigation">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-links-title">Services</h4>
+          <nav>
+            <a href="#services">Frontend Development</a>
+            <a href="#services">Responsive Design</a>
+            <a href="#contact">Freelance Projects</a>
+          </nav>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-links-title">Contact</h4>
+          <nav>
+            <a href="https://mail.google.com/mail/?view=cm&to=prog8678@gmail.com" target="_blank" rel="noopener">prog8678@gmail.com</a>
+            <a href="#">Pakistan 🇵🇰</a>
+            <a href="#contact" class="hire-link">Hire Me <i class="bi bi-arrow-right"></i></a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="footerYear"></span> AbdulahadBLOOM. All rights reserved. Crafted with <span class="heart">♥</span> &amp; coffee.</p>
+        <p class="footer-bottom-right">Always building something new</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
